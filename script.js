@@ -14,7 +14,7 @@ buttonS.addEventListener("click", () => {
     if (!userName.value) return;
     else if (!userKm.value) return;
     else if (!userAge.value) return;
-    nameDiv.innerHTML += `<div id="newName">${userName.value}</div>`;
+    nameDiv.innerHTML += `<div id="newName" class="fw-bold">${userName.value}</div>`;
     let myObj = calcTicket(userKm.value, userAge.value);
     ticketType.innerHTML = `<div>${myObj.name}</div>`;
     ticketPrice.innerHTML = `<div>${myObj.price}€</div>`;
