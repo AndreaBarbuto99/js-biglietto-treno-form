@@ -11,8 +11,30 @@
 </head>
 
 <body class="bg-danger">
-<h1 class="text-white text-center fw-bold mt-3">Calcola il prezzo del tuo biglietto</h1>
+    <h1 class="text-white text-center fw-bold mt-3">Calcola il prezzo del tuo biglietto</h1>
+    <div class="row justify-content-center">
+        <form class="d-flex justify-content-center" action="">
+            <div class="col-8 bg-light rounded shadow-lg d-flex justify-content-evenly">
 
+                <div class="text-danger fw-semibold mt-3 mb-3 d-flex flex-column col-2 input-group-sm">
+                    <span class="text-center mb-2">Nome e Cognome</span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="text-danger fw-semibold mt-3 mb-3 d-flex flex-column col-2 input-group-sm">
+                    <span class="text-center mb-2">Km da percorrere</span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="text-danger fw-semibold mt-3 mb-3 d-flex flex-column col-2 input-group-sm">
+                    <span class="text-center mb-2">Fascia d'et&aacute;</span>
+                    <select class="form-select">
+                    <option value="minor">Minorenne</option>
+                    <option value="major">Maggiorenne</option>
+                    <option value="old">Over 65</option>
+                </div>
+            </div>
+
+        </form>
+    </div>
 
     <script src="./script.js"></script>
 </body>
