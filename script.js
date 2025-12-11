@@ -11,10 +11,10 @@ const ticketPrice = document.getElementById("ticket-price");
 
 
 buttonS.addEventListener("click", () => {
-    
-    
-    
-    nameDiv.innerHTML += `<div>${userName.value}</div>`;
+    if (!userName.value) return;
+    else if (!userKm.value) return;
+    else if (!userAge.value) return;
+    nameDiv.innerHTML += `<div id="newName">${userName.value}</div>`;
     let myObj = calcTicket(userKm.value, userAge.value);
     ticketType.innerHTML = `<div>${myObj.name}</div>`;
     ticketPrice.innerHTML = `<div>${myObj.price}€</div>`;
@@ -25,6 +25,7 @@ buttonC.addEventListener("click", () => {
     userName.value = "";
     userKm.value = "";
     userAge.value ="default";
+    cancAll();
 })
 
 myForm.addEventListener("submit", (e) => {
@@ -53,4 +54,13 @@ function calcTicket(km, age)
         price = defaultPrice;
     }
     return {price: price.toFixed(2), name: ticketName};
+}
+
+
+function cancAll () {
+    document.getElementById("newName").remove();
+    ticketType.innerHTML = `<div></div>`;
+    ticketPrice.innerHTML = `<div></div>`;
+
+
 }

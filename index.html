@@ -18,16 +18,16 @@
 
                 <div class="text-danger fw-semibold mt-3 mb-3 d-flex flex-column col-2 input-group-sm">
                     <span class="text-center mb-2">Nome e Cognome</span>
-                    <input type="text" class="form-control" id="user-name">
+                    <input type="text" class="form-control" id="user-name" required>
                 </div>
                 <div class="text-danger fw-semibold mt-3 mb-3 d-flex flex-column col-2 input-group-sm">
                     <span class="text-center mb-2">Km da percorrere</span>
-                    <input type="text" class="form-control" id="user-km">
+                    <input type="text" class="form-control" id="user-km" required>
                 </div>
                 <div class="text-danger fw-semibold mt-3 mb-3 d-flex flex-column col-2 input-group-sm">
                     <span class="text-center mb-2">Fascia d'et&aacute;</span>
-                    <select class="form-select" id="user-age">
-                        <option selected value="default">...</option>
+                    <select class="form-select" id="user-age" required>
+                        <option selected value="">...</option>
                         <option value="minor">Minorenne</option>
                         <option value="major">Maggiorenne</option>
                         <option value="old">Over 65</option>
@@ -62,10 +62,10 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td id="ticket-type">""</td>
+                                <td id="ticket-type"></td>
                                 <td>5</td>
                                 <td>92911</td>
-                                <td id="ticket-price">""</td>
+                                <td id="ticket-price"></td>
                             </tr>
                         </tbody>
                     </table>
